@@ -6,10 +6,17 @@
 # the expected output would be [120, 60, 40, 30, 24]. If our input was [3, 2, 1], 
 # the expected output would be [2, 3, 6]
 
-uber = [1,2,3,4,5]
-newlist = []
-result = 0
+def array(uber):
+    product = 1
+    for n in uber:
+        product *= n
+    for i in range(len(uber)):
+        uber[i] = product / uber[i]
 
-for i in range(len(uber)):
-    result = uber[i]*uber[i-1]
-    newlist.append(result)  
+
+
+
+
+uber = [1, 2, 3, 4, 5]
+array(uber)
+print(uber)
