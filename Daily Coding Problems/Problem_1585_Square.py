@@ -15,7 +15,7 @@ def sieve_of_eratosthenes(N):
     # all entries it as true. A value in is_prime[i] will finally be false if i is Not a prime, else true.
     
     is_prime = [True] * (N + 1)
-    print(is_prime)
+    
     is_prime[0] = is_prime[1] = False
 
     for i in range(2, int(N**0.5) + 1):
